@@ -5,6 +5,7 @@
      <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <div class="body">
     <div class="container d-flex align-items-center h-100 ">
       <div class="row">
         <header class="text-center col-12">
@@ -24,10 +26,42 @@
         <div class="buffer col-12"></div> 
         <section class="text-center col-12">
           <hr> 
+          <div class="timer">
+          <div id="year" class="year"></div>
+
+            <h1>პროექტი გახსნამდე დარჩენილია</h1>
+            <br>
+            <div id="countdown" class="countdown">
+              <div class="time">
+                <h2 id="days">00</h2>
+                <small>დღე</small>
+              </div>
+              <div class="time">
+                <h2 id="hours">00</h2>
+                <small>საათი</small>
+              </div>
+              <div class="time">
+                <h2 id="minutes">00</h2>
+                <small>წუთი</small>
+              </div>
+              <div class="time">
+                <h2 id="seconds">00</h2>
+                <small>წამი</small>
+              </div>
+            </div>
+            <img
+              src="./img/spinner.gif"
+              alt="Loading..."
+              id="loading"
+              class="loading"
+            />
+        </div>
           <a href="https://mailchi.mp/cb154fda8b19/gamesector"><button class="btn btn-primary btn-xl">Get News</button>
           </a>
         </section>
       </div>
     </div>
+    </div>
+           <script src="script2.js"></script>
   </body>
 </html>
